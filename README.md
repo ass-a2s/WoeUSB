@@ -29,6 +29,8 @@ Note that prebuilt packages are not necessarily the latest release and we are NO
 
 #### Official Distribution Packages
 * [Fedora](https://src.fedoraproject.org/rpms/WoeUSB) packages maintained by mprahl
+* [openSUSE](https://software.opensuse.org/package/WoeUSB) packages maintained by [guoyunhe](https://guoyunhe.me/)
+* [Gentoo](https://packages.gentoo.org/packages/sys-boot/woeusb) packages maintained by pacho
 
 #### Third-party Distribution Packages
 * [Arch Linux](https://aur.archlinux.org/packages/woeusb-git/) packages maintained by darkfm
@@ -53,7 +55,7 @@ $ ./setup-development-environment.bash
 ```shell
 # For Debian-based distributions (NOTE: For your convenience, this package is already provided in the release page)
 $ sudo apt-get install devscripts equivs gdebi-core
-$ cd <WoeUSB source code directory>
+$ cd <WoeUSB source tree directory, the folder that contains the `src` folder>
 $ mk-build-deps # NOTE: Currently, due to Debian Bug #679101, this command will fail if the source path contains spaces.
 $ sudo gdebi woeusb-build-deps_<version>_all.deb
 
